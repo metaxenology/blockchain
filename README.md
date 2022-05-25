@@ -1,2 +1,2 @@
-# Blockchain Written In Go
+# Blockchain
 
