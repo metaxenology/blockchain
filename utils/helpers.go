@@ -18,3 +18,11 @@ func ToByteSlice(x int64) []byte {
 	}
 	return buf.Bytes()
 }
+
+func MultiSliceAppend(slices [][]byte) []byte {
+	res := []byte{}
+	for _, slice := range slices {
+		res = append(res, slice...)
+	}
+	return res
+}
